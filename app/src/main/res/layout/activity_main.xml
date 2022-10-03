@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="364dp"
+        android:layout_height="358dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="106dp"
+        android:background="#2C8E5E45"
+        android:orientation="vertical"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.654">
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="69dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:background="#12FFFFFF"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/Fade_f"
+                android:layout_width="158dp"
+                android:layout_height="59dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundebutton"
+                android:linksClickable="false"
+                android:onClick="fade"
+                android:text="Fade" />
+
+            <Button
+                android:id="@+id/Move_m"
+                android:layout_width="158dp"
+                android:layout_height="59dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundebutton"
+                android:text="Move" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="69dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:background="#12FFFFFF"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/Rotate_r"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundebutton"
+                android:text="Rotate" />
+
+            <Button
+                android:id="@+id/Zoom"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundebutton"
+                android:text="Zoom" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="69dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:background="#12FFFFFF"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/Slide_s"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundebutton"
+                android:text="Slide" />
+
+            <Button
+                android:id="@+id/Bounce_b"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundebutton"
+                android:text="Bounce" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="69dp"
+            android:layout_margin="10dp"
+            android:layout_weight="0"
+            android:background="#12FFFFFF"
+            android:gravity="center"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/Blink_b"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundebutton"
+                android:text="Blink" />
+
+            <Button
+                android:id="@+id/Interploater_i"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/roundebutton"
+                android:text="Interpolator" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="182dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="577dp"
+        android:background="#00E8E3E1"
+        android:fontFamily="@font/abril_fatface"
+        android:gravity="center"
+        android:text="_Khushi_"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#D16464"
+        android:textColorHint="#81C784"
+        android:textColorLink="#FFD54F"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="340dp"
+        android:layout_height="69dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0"
+        android:background="#12FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956">
+
+        <Button
+            android:id="@+id/Stop_s"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundebutton"
+            android:text="Stop" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="346dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="33dp"
+        android:gravity="center"
+        android:text="Click on Button For Animations "
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
